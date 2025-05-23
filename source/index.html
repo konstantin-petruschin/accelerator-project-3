@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html  class="page" lang="ru" data-validate="html">
 
   <head>
     <meta charset="UTF-8">
@@ -8,14 +8,76 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+  <body class="page__body">
+    <main class="page__main">
+      <section class="hero" data-test="hero">
+        <h1 class="visually-hidden">Профессиональный центр обучения за рубежом -  «Internship».</h1>
+        <header class="header">
+          <div class="header__container container">
+            <div class="header__logo">
+              <svg class="header__logo-image"  width="30" height="30" role="img" aria-label="Логотип «Internship».">
+
+              </svg>
+            </div>
+          </div>
+          <button class="header__menu-toggle" aria-label="Открыть/закрыть меню.">Меню</button>
+          <nav class="header__nav nav" aria-label="Основная навигация в шапке сайта.">
+            <ul class="nav__menu-list">
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">О проекте</a>
+              </li>
+              <li class="nav__menu-item">
+                <button class="nav__submenu-button" href="#" type="button">Программы</button>
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Стажировки</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Учёба</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">Как поехать</a>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">Отзывы</a>
+              </li>
+              <li class="nav__menu-item">
+                <button class="nav__submenu-button" href="#" type="button">Новости</button>
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Общее</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Волонтёрство</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Стажировки</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Карьера</a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a class="nav__submenu-link" href="#">Путешествия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__menu-item">
+                <a class="nav__menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+    </main>
+
     <div data-test="about">about</div>
     <div data-test="programs">programs</div>
     <div data-test="grant">grant</div>
@@ -25,6 +87,9 @@
     <div data-test="contacts">contacts</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
+
+
+
     <script type="module" src="js/main.js"></script>
   </body>
 
