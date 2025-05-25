@@ -4,7 +4,6 @@
 .header {
   padding-top: 20px;
   padding-bottom: 4px;
-
 }
 
 .header__container {
@@ -32,17 +31,15 @@
   right: 0;
   top: calc(100% + 4px);
   opacity: 0;
-  overflow: hidden;
-  transform: translateX(100%);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-origin: 0 0;
+  transform: translateX(-43%);
+  transition: opacity 0.3s ease;
 }
-
 
 .header__nav--active {
-  transform: translateX(-42%);
   opacity: 1;
+  z-index: 15;
 }
-
 
 .header__menu-toggle {
   font-weight: 500;
@@ -53,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  cursor: pointer;
   text-align: left;
   border-radius: 30px;
   border: 1px solid v.$additional-color-basic;
@@ -68,6 +66,7 @@
   width: 290px;
   background-color: v.$additional-color-basic;
   color: v.$white-color-basic;
+  z-index: 15;
 }
 
 .header__menu-icon {
@@ -79,7 +78,6 @@
   height: 46px;
   border-radius: 50%;
   transition: background-color 0.3s ease;
-
 }
 
 .header__menu-line {
@@ -123,7 +121,7 @@
 }
 
 .header__menu-toggle--active .header__menu-line::after {
-  transform: rotate(45deg) translateY(0);
+  transform: rotate(45deg) translateY(-1px);
 }
 
 .header__menu-toggle--active .header__menu-line::before {
