@@ -1,4 +1,11 @@
-// Vendor
-// ---------------------------------
-
-@import "vendor/normalize";
+@use "vendor/normalize";
+@use "mixins/media";
+@use "common/global";
+@use "common/fonts";
+@use "blocks/heading";
+@use "blocks/button";
+@use "blocks/page";
+@use "blocks/header";
+@use "blocks/nav";
+@use "blocks/hero";
+@use "blocks/swiper";

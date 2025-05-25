@@ -1,0 +1,6 @@
+@use "../mixins/media.scss" as m;
+@use "../common/variables.scss" as v;
+
+.hero {
+  background-color: v.$additional-color-100;
+}

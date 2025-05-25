@@ -16,11 +16,15 @@
           <div class="header__container container">
             <div class="header__logo">
               <svg class="header__logo-image"  width="30" height="30" role="img" aria-label="Логотип «Internship».">
-
+                <use href="/__spritemap#sprite-logo"></use>
               </svg>
             </div>
-          </div>
-          <button class="header__menu-toggle" aria-label="Открыть/закрыть меню.">Меню</button>
+            <button class="header__menu-toggle" aria-label="Открыть/закрыть меню.">
+              <span class="header__menu-text">Меню</span>
+              <div class="header__menu-icon">
+                <span class="header__menu-line"></span>
+              </div>
+            </button>
           <nav class="header__nav nav" aria-label="Основная навигация в шапке сайта.">
             <ul class="nav__menu-list">
               <li class="nav__menu-item">
@@ -74,7 +78,45 @@
               </li>
             </ul>
           </nav>
+
+          </div>
+
         </header>
+
+        <div class="hero__swiper-container swiper-container">
+          <div class="hero__swiper hero-swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="hero__card">
+                  <div class="hero__container container">
+                    <h3>Глобальный профессиональный опыт обучения за рубежом</h3>
+                    <p>Погрузитесь в академическую программу, проходя в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    <a class="hero__link button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="hero__card">
+                  <div class="hero__container container">
+                    <h3>Программы стажировок в крупнейших компаниях мира</h3>
+                    <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.</p>
+                    <a class="hero__link button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="hero__card">
+                  <div class="hero__container container">
+                    <h3>Волонтерские программы - внесите свой вклад в общество</h3>
+                    <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.</p>
+                    <a  class="hero__link button" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
     </main>
 

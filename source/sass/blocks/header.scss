@@ -1,0 +1,133 @@
+@use "../mixins/media.scss" as m;
+@use "../common/variables.scss" as v;
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 4px;
+
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: v.$white-color-basic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav {
+  max-width: 290px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  opacity: 0;
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.header__nav--active {
+  transform: translateX(-42%);
+  opacity: 1;
+}
+
+
+.header__menu-toggle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: left;
+  border-radius: 30px;
+  border: 1px solid v.$additional-color-basic;
+  padding: 4px;
+  padding-left: 21px;
+  color: v.$additional-color-basic;
+  text-transform: uppercase;
+  background-color: v.$white-color-basic;
+  transition: color 0.3s ease, background-color 0.3s ease, width 0.3s ease;
+}
+
+.header__menu-toggle--active {
+  width: 290px;
+  background-color: v.$additional-color-basic;
+  color: v.$white-color-basic;
+}
+
+.header__menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: v.$additional-color-basic;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+
+}
+
+.header__menu-line {
+  display: block;
+  height: 1px;
+  width: 16px;
+  background-color: v.$white-color-basic;
+  transition: background-color 0.3s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 16px;
+    background-color: v.$white-color-basic;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  &::before {
+    transform: translateY(-4px);
+  }
+
+  &::after {
+    transform: translateY(4px);
+  }
+}
+
+.header__menu-toggle--active .header__menu-icon {
+  background-color: v.$white-color-basic;
+}
+
+.header__menu-toggle--active .header__menu-line {
+  background-color: transparent;
+}
+
+.header__menu-toggle--active .header__menu-line::after,
+.header__menu-toggle--active .header__menu-line::before {
+  background-color: v.$additional-color-basic;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header__menu-toggle--active .header__menu-line::after {
+  transform: rotate(45deg) translateY(0);
+}
+
+.header__menu-toggle--active .header__menu-line::before {
+  transform: rotate(-45deg) translateY(0);
+}
+
+

@@ -1,0 +1,26 @@
+// ширина экрана
+
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1440px;
+
+// цвета
+
+$primary-color: #2d383f;
+$error-color: #ff121f;
+$active-color: #1c3374;
+$stroke-br-color: rgba(45, 56, 63, 0.2);
+$disabled-color: #999999;
+$white-color-basic: #ffffff;
+$white-color-200: rgba(255, 255, 255, 0.2);
+$white-color-500: rgba(255, 255, 255, 0.5);
+$white-color-100: rgba(255, 255, 255, 0.1);
+$additional-color-basic: #0266c1;
+$additional-color-200: rgba(2, 102, 193, 0.2);
+$additional-color-100: rgba(2, 102, 193, 0.1);
+$overlay-color-500: rgba(0, 0, 0, 0.5);
+$dark-color: #030a1a;
+
+// шрифты
+
+$font-family: "Montserrat", "Arial", sans-serif;
