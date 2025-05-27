@@ -1,2 +1,48 @@
 @use "../mixins/media.scss" as m;
 @use "../common/variables.scss" as v;
+
+.button {
+  position: relative;
+  display: block;
+  background-color: v.$white-basic;
+  border: 1px solid v.$primary-color;
+  border-radius: 30px;
+  max-width: 154px;
+  cursor: pointer;
+  padding: 15px 58px 15px 20px;
+  color: v.$primary-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: v.$primary-color;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: 8px 8px;
+    background-color: v.$white-basic;
+    transition: transform 0.3s ease;
+    top: 16px;
+    right: 15px;
+    z-index: 1;
+  }
+}

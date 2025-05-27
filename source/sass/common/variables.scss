@@ -6,12 +6,17 @@ $desktop: 1440px;
 
 // цвета
 
-$primary-color: #2d383f;
+$primary-color: #316dc2;
+$dark-overlay: rgba(13, 29, 51, 0.4);
+$white-basic: #ffffff;
+$state-active: #275699;
+$color-text: #484848;
+
 $error-color: #ff121f;
 $active-color: #1c3374;
 $stroke-br-color: rgba(45, 56, 63, 0.2);
 $disabled-color: #999999;
-$white-color-basic: #ffffff;
+
 $white-color-200: rgba(255, 255, 255, 0.2);
 $white-color-500: rgba(255, 255, 255, 0.5);
 $white-color-100: rgba(255, 255, 255, 0.1);

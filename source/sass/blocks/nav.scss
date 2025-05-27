@@ -2,7 +2,7 @@
 @use "../common/variables.scss" as v;
 
 .nav {
-  background-color: v.$additional-color-basic;
+  background-color: v.$primary-color;
   padding: 25px;
   border-radius: 16px;
 }
@@ -22,9 +22,15 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: rgba(v.$white-color-basic, 0.7);
+  color: v.$white-basic;
   text-decoration: none;
   text-transform: uppercase;
+  opacity: 0.7;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .nav__submenu {
@@ -45,20 +51,26 @@
 
 .nav__submenu-link {
   display: block;
-  color: rgba(v.$white-color-basic, 0.6);
+  color: v.$white-basic;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
+  opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
 }
 
 .nav__submenu-button {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: v.$white-color-basic;
+  color: v.$white-basic;
   border: none;
   background-color: transparent;
   padding: 0;
@@ -77,11 +89,16 @@
     display: block;
     width: 12px;
     height: 7px;
-    mask-image: url("/__spritemap#sprite-dropdown-view");
+    mask-image: url("/__spritemap#sprite-down-view");
     mask-repeat: no-repeat;
     mask-size: 12px 7px;
-    background-color: v.$white-color-basic;
+    background-color: v.$white-basic;
     transition: transform 0.3s ease;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
   }
 }
 

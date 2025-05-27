@@ -1,2 +1,44 @@
 @use "../mixins/media.scss" as m;
 @use "../common/variables.scss" as v;
+
+.hero-swiper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__swiper-container.swiper-container {
+    z-index: 1;
+    position: relative;
+}
+
+.swiper-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 90px;
+  height: 28px;
+  z-index: 40;
+}
+
+.swiper-pagination-bullet {
+  width: 8px ;
+  height: 8px;
+  border: 2px solid v.$primary-color;
+  display: block;
+  border-radius: 50%;
+  padding: 0;
+  background-color: v.$white-basic;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: v.$state-active;
+  border-color: v.$state-active;
+}
+
