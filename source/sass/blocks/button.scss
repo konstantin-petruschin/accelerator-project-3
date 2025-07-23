@@ -8,6 +8,7 @@
   border: 1px solid v.$primary-color;
   border-radius: 30px;
   max-width: 154px;
+  width: 100%;
   cursor: pointer;
   padding: 15px 58px 15px 20px;
   color: v.$primary-color;
@@ -16,6 +17,13 @@
   line-height: 12px;
   text-decoration: none;
   text-transform: uppercase;
+
+  @include m.tablet {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 198px;
+    padding: 20px 83px 20px 30px;
+  }
 
   &::after {
     position: absolute;
@@ -28,6 +36,12 @@
     height: 34px;
     border-radius: 50%;
     background-color: v.$primary-color;
+
+    @include m.tablet {
+      width: 46px;
+      height: 46px;
+      right: 5px;
+    }
   }
 
   &:before {

@@ -23,8 +23,12 @@
   align-items: center;
   gap: 12px;
   width: 90px;
-  height: 28px;
+  min-height: 28px;
   z-index: 40;
+
+  @include m.tablet {
+    width: 110px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -35,6 +39,11 @@
   border-radius: 50%;
   padding: 0;
   background-color: v.$white-basic;
+
+  @include m.tablet {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .swiper-pagination-bullet-active {

@@ -5,6 +5,10 @@
   padding-top: 20px;
   padding-bottom: 4px;
   overflow: hidden;
+
+  @include m.tablet {
+    padding-top: 32px;
+  }
 }
 
 .header__container {
@@ -66,6 +70,10 @@
   text-transform: uppercase;
   background-color: v.$white-basic;
   transition: color 0.3s ease, background-color 0.3s ease, width 0.3s ease;
+
+  @include m.tablet {
+    right: 45px;
+  }
 }
 
 .header__menu-toggle--active {
